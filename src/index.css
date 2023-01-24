@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    header {
+        background-image: linear-gradient(200.44deg, rgba(0, 0, 0, 0.0001) 16.41%, rgba(0, 0, 0, 0.51) 77.16%), url("https://cdn.pixabay.com/photo/2016/11/29/03/53/house-1867187_960_720.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-height: 100vh;
+        padding-bottom: 30px;
+    }
+}
+
+
+@layer utilities {
+    .active {
+        @apply border-b-2 border-white
+    }
+}
+
+.menu {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #F4511E;
+}
+
